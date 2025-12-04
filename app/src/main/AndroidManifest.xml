@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Userfit">
         <activity
+            android:name=".WeeklyWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

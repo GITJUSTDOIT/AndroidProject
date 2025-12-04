@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="0,1,2,3,4,5,6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="요일별 추천운동"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 요일 헤더 -->
+    <TableRow>
+
+        <TextView android:text="월" />
+        <TextView android:text="화" />
+        <TextView android:text="수" />
+        <TextView android:text="목" />
+        <TextView android:text="금" />
+        <TextView android:text="토" />
+        <TextView android:text="일" />
+
+    </TableRow>
+
+    <!-- 1행 예시 -->
+    <TableRow>
+
+        <TextView
+            android:text="벤치프레스("
+            android:padding="4dp" />
+
+        <TextView android:padding="4dp" />
+        <TextView android:padding="4dp" />
+        <TextView android:padding="4dp" />
+        <TextView android:padding="4dp" />
+        <TextView android:padding="4dp" />
+        <TextView android:padding="4dp" />
+
+    </TableRow>
+
+    <!-- 필요하면 행 추가해서 운동 더 넣으면 됩니다 -->
+
+</TableLayout>
