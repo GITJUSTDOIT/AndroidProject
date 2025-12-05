@@ -53,23 +53,31 @@
             android:text="운동목적:"
             android:layout_marginTop="16dp"/>
 
-        <CheckBox
-            android:id="@+id/cb_diet"
+        <RadioGroup
+            android:id="@+id/rg_goal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="다이어트" />
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/cb_maintain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="유지" />
+            <RadioButton
+                android:id="@+id/rb_diet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다이어트" />
 
-        <CheckBox
-            android:id="@+id/cb_bulk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="벌크업" />
+            <RadioButton
+                android:id="@+id/rb_maintain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유지" />
+
+            <RadioButton
+                android:id="@+id/rb_bulk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="벌크업" />
+
+        </RadioGroup>
 
         <Button
             android:id="@+id/btn_save"

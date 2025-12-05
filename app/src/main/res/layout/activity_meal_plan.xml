@@ -9,17 +9,15 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- 제목 -->
         <TextView
-            android:id="@+id/tv_weekly_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="요일별 추천운동"
+            android:text="요일별 맞춤 식단"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="12dp" />
 
-        <!-- ✅ 월~금 버튼은 그대로 -->
+        <!-- 월~금 요일 선택 버튼 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,118 +26,152 @@
             android:layout_marginBottom="16dp">
 
             <Button
-                android:id="@+id/btn_mon"
+                android:id="@+id/btn_meal_mon"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="월" />
 
             <Button
-                android:id="@+id/btn_tue"
+                android:id="@+id/btn_meal_tue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="화" />
 
             <Button
-                android:id="@+id/btn_wed"
+                android:id="@+id/btn_meal_wed"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="수" />
 
             <Button
-                android:id="@+id/btn_thu"
+                android:id="@+id/btn_meal_thu"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="목" />
 
             <Button
-                android:id="@+id/btn_fri"
+                android:id="@+id/btn_meal_fri"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="금" />
         </LinearLayout>
 
-        <!-- 선택된 요일 텍스트 -->
+        <!-- 선택된 요일 표시 -->
         <TextView
-            android:id="@+id/tv_selected_day"
+            android:id="@+id/tv_meal_selected_day"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="요일을 선택하세요."
             android:textSize="16sp"
             android:layout_marginBottom="8dp" />
 
-        <!-- ✅ 사진 | 운동설명 형태의 2열 테이블 (4줄) -->
+        <!-- 식단 테이블 (식사 / 메뉴+칼로리) -->
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:stretchColumns="1">
 
-            <!-- 1행 -->
+            <!-- 헤더 -->
             <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사진"
-                    android:padding="8dp" />
+                    android:text="식사"
+                    android:textStyle="bold"
+                    android:padding="4dp" />
 
                 <TextView
-                    android:id="@+id/tv_ex1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:padding="8dp" />
+                    android:text="메뉴 (kcal)"
+                    android:textStyle="bold"
+                    android:padding="4dp" />
             </TableRow>
 
-            <!-- 2행 -->
+            <!-- 아침 -->
             <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사진"
-                    android:padding="8dp" />
+                    android:text="아침"
+                    android:padding="4dp" />
 
                 <TextView
-                    android:id="@+id/tv_ex2"
+                    android:id="@+id/tv_meal_breakfast"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="8dp" />
+                    android:padding="4dp" />
             </TableRow>
 
-            <!-- 3행 -->
+            <!-- 점심 -->
             <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사진"
-                    android:padding="8dp" />
+                    android:text="점심"
+                    android:padding="4dp" />
 
                 <TextView
-                    android:id="@+id/tv_ex3"
+                    android:id="@+id/tv_meal_lunch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="8dp" />
+                    android:padding="4dp" />
             </TableRow>
 
-            <!-- 4행 -->
+            <!-- 저녁 -->
             <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사진"
-                    android:padding="8dp" />
+                    android:text="저녁"
+                    android:padding="4dp" />
 
                 <TextView
-                    android:id="@+id/tv_ex4"
+                    android:id="@+id/tv_meal_dinner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="8dp" />
+                    android:padding="4dp" />
+            </TableRow>
+
+            <!-- 간식 -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="간식"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_meal_snack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:padding="4dp" />
+            </TableRow>
+
+            <!-- 총 kcal -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="총 kcal"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_meal_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:padding="4dp" />
             </TableRow>
 
         </TableLayout>

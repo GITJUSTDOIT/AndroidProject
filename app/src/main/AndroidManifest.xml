@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Userfit">
         <activity
+            android:name=".MealPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExerciseListActivity"
+            android:exported="false" />
+        <activity
             android:name=".WeeklyWorkoutActivity"
             android:exported="false" />
         <activity
