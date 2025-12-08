@@ -24,6 +24,14 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
+            android:name=".ExerciseTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OneRmUpdateActivity"
+            android:exported="false" />
+
+
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity

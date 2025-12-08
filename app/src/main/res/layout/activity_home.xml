@@ -34,7 +34,7 @@
                 android:textSize="14sp" />
         </LinearLayout>
 
-        <!-- 카드 3개 -->
+        <!-- 카드들 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,7 +96,8 @@
                 android:layout_height="80dp"
                 android:orientation="horizontal"
                 android:padding="12dp"
-                android:background="@android:color/darker_gray">
+                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="12dp">
 
                 <View
                     android:layout_width="56dp"
@@ -107,6 +108,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="운동 정보"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- ✅ 1RM 갱신 -->
+            <LinearLayout
+                android:id="@+id/layout_onerm"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@android:color/darker_gray">
+
+                <View
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1RM 갱신"
                     android:textSize="18sp"
                     android:layout_marginStart="16dp"
                     android:layout_gravity="center_vertical" />

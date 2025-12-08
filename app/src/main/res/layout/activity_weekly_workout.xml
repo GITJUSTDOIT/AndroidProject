@@ -19,7 +19,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="12dp" />
 
-        <!-- ✅ 월~금 버튼은 그대로 -->
+        <!-- 월~일 버튼 (사각형 모양, 글자 안 잘리게 패딩 추가) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,38 +32,81 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="월" />
+                android:text="월"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
 
             <Button
                 android:id="@+id/btn_tue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="화" />
+                android:text="화"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
 
             <Button
                 android:id="@+id/btn_wed"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="수" />
+                android:text="수"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
 
             <Button
                 android:id="@+id/btn_thu"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="목" />
+                android:text="목"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
 
             <Button
                 android:id="@+id/btn_fri"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="금" />
+                android:text="금"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
+
+            <Button
+                android:id="@+id/btn_sat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="토"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
+
+            <Button
+                android:id="@+id/btn_sun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="일"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
         </LinearLayout>
 
-        <!-- 선택된 요일 텍스트 -->
+
+        <!-- 선택된 요일 표시 -->
         <TextView
             android:id="@+id/tv_selected_day"
             android:layout_width="wrap_content"
@@ -72,7 +115,7 @@
             android:textSize="16sp"
             android:layout_marginBottom="8dp" />
 
-        <!-- ✅ 사진 | 운동설명 형태의 2열 테이블 (4줄) -->
+        <!-- 사진 | 운동설명 테이블 (4줄) -->
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,14 +127,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="사진"
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_ex1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 2행 -->
@@ -100,14 +145,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="사진"
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_ex2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 3행 -->
@@ -116,14 +163,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="사진"
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_ex3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 4행 -->
@@ -132,17 +181,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="사진"
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_ex4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
         </TableLayout>
+
 
     </LinearLayout>
 </ScrollView>

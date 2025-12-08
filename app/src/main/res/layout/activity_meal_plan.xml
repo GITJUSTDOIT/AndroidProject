@@ -17,7 +17,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="12dp" />
 
-        <!-- 월~금 요일 선택 버튼 -->
+        <!-- ✅ 월~일 요일 선택 버튼 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,35 +30,77 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="월" />
+                android:text="월"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
 
             <Button
                 android:id="@+id/btn_meal_tue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="화" />
+                android:text="화"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
 
             <Button
                 android:id="@+id/btn_meal_wed"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="수" />
+                android:text="수"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
 
             <Button
                 android:id="@+id/btn_meal_thu"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="목" />
+                android:text="목"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
 
             <Button
                 android:id="@+id/btn_meal_fri"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="금" />
+                android:text="금"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
+
+            <Button
+                android:id="@+id/btn_meal_sat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="토"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
+
+            <Button
+                android:id="@+id/btn_meal_sun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="일"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/day_button_bg" />
         </LinearLayout>
 
         <!-- 선택된 요일 표시 -->
@@ -83,14 +125,16 @@
                     android:layout_height="wrap_content"
                     android:text="식사"
                     android:textStyle="bold"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="메뉴 (kcal)"
                     android:textStyle="bold"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 아침 -->
@@ -99,14 +143,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="아침"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_breakfast"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 점심 -->
@@ -115,14 +161,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="점심"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_lunch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 저녁 -->
@@ -131,14 +179,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="저녁"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_dinner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 간식 -->
@@ -147,14 +197,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="간식"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_snack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 총 kcal -->
@@ -163,7 +215,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="총 kcal"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_total"
@@ -171,7 +224,8 @@
                     android:layout_height="wrap_content"
                     android:text=""
                     android:textStyle="bold"
-                    android:padding="4dp" />
+                    android:padding="4dp"
+                    android:background="@drawable/table_cell_border" />
             </TableRow>
 
         </TableLayout>
