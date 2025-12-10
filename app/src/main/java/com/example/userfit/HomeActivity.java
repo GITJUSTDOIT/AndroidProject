@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
         if (goal == null || goal.isEmpty()) goal = "미선택";
 
         tvWelcome.setText(name + "님 환영합니다!!");
-        String sText = String.format("S = %.3f  /  등급: %s\n운동목적: %s", sValue, sGrade, goal);
+        String sText = String.format("운동목적: %s", goal);
         tvSInfo.setText(sText);
 
         // 요일별 추천운동 화면

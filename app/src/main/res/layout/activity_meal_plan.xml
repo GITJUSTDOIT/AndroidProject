@@ -121,16 +121,18 @@
             <!-- 헤더 -->
             <TableRow>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:text="식사"
                     android:textStyle="bold"
+                    android:gravity="center"
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="메뉴 (kcal)"
                     android:textStyle="bold"
                     android:padding="4dp"
@@ -140,16 +142,19 @@
             <!-- 아침 -->
             <TableRow>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="아침"
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_breakfast"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top"
                     android:text=""
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
@@ -158,16 +163,19 @@
             <!-- 점심 -->
             <TableRow>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="점심"
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_lunch"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top"
                     android:text=""
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
@@ -176,16 +184,19 @@
             <!-- 저녁 -->
             <TableRow>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="저녁"
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_dinner"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top"
                     android:text=""
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
@@ -194,16 +205,19 @@
             <!-- 간식 -->
             <TableRow>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="간식"
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_snack"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top"
                     android:text=""
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
@@ -212,16 +226,19 @@
             <!-- 총 kcal -->
             <TableRow>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="총 kcal"
                     android:padding="4dp"
                     android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_meal_total"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top"
                     android:text=""
                     android:textStyle="bold"
                     android:padding="4dp"

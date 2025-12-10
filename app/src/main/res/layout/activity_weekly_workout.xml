@@ -123,78 +123,91 @@
 
             <!-- 1행 -->
             <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="사진"
-                    android:padding="8dp"
+
+                <!-- 사진 영역: 160dp x 160dp -->
+                <ImageView
+                    android:id="@+id/iv_ex1"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
                     android:background="@drawable/table_cell_border" />
 
+                <!-- 설명 영역: 남은 공간 전부, 높이 160dp -->
                 <TextView
                     android:id="@+id/tv_ex1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:padding="8dp"
+                    android:textSize="14sp"
                     android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 2행 -->
             <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="사진"
-                    android:padding="8dp"
+
+                <ImageView
+                    android:id="@+id/iv_ex2"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
                     android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_ex2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:padding="8dp"
+                    android:textSize="14sp"
                     android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 3행 -->
             <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="사진"
-                    android:padding="8dp"
+
+                <ImageView
+                    android:id="@+id/iv_ex3"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
                     android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_ex3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:padding="8dp"
+                    android:textSize="14sp"
                     android:background="@drawable/table_cell_border" />
             </TableRow>
 
             <!-- 4행 -->
             <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="사진"
-                    android:padding="8dp"
+
+                <ImageView
+                    android:id="@+id/iv_ex4"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
                     android:background="@drawable/table_cell_border" />
 
                 <TextView
                     android:id="@+id/tv_ex4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:padding="8dp"
+                    android:textSize="14sp"
                     android:background="@drawable/table_cell_border" />
             </TableRow>
 
         </TableLayout>
-
 
     </LinearLayout>
 </ScrollView>

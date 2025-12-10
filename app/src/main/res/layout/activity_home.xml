@@ -51,10 +51,12 @@
                 android:background="@android:color/darker_gray"
                 android:layout_marginBottom="12dp">
 
-                <View
+                <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:background="@android:color/white" />
+                    android:src="@drawable/icon_weekly_workout"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="요일별 추천운동 아이콘" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -75,10 +77,12 @@
                 android:background="@android:color/darker_gray"
                 android:layout_marginBottom="12dp">
 
-                <View
+                <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:background="@android:color/white" />
+                    android:src="@drawable/icon_meal"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="맞춤 식단 아이콘" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -99,10 +103,12 @@
                 android:background="@android:color/darker_gray"
                 android:layout_marginBottom="12dp">
 
-                <View
+                <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:background="@android:color/white" />
+                    android:src="@drawable/icon_workout_info"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="운동 정보 아이콘" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -113,7 +119,7 @@
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
 
-            <!-- ✅ 1RM 갱신 -->
+            <!-- 1RM 갱신 -->
             <LinearLayout
                 android:id="@+id/layout_onerm"
                 android:layout_width="match_parent"
@@ -122,10 +128,12 @@
                 android:padding="12dp"
                 android:background="@android:color/darker_gray">
 
-                <View
+                <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:background="@android:color/white" />
+                    android:src="@drawable/icon_onerm"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="1RM 갱신 아이콘" />
 
                 <TextView
                     android:layout_width="wrap_content"
