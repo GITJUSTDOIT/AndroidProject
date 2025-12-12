@@ -47,7 +47,7 @@ public class ProfileActivity extends AppCompatActivity {
                     return;
                 }
 
-                // ✅ 운동목적 하나 선택했는지 확인
+                // 운동목적 하나 선택했는지 확인
                 int checkedId = rgGoal.getCheckedRadioButtonId();
                 if (checkedId == -1) {
                     Toast.makeText(ProfileActivity.this, "운동목적을 하나 선택해주세요.", Toast.LENGTH_SHORT).show();
@@ -74,7 +74,7 @@ public class ProfileActivity extends AppCompatActivity {
                     return;
                 }
 
-                // S 계산: 몸무게 / 키(cm) (필요하면 여기만 수정)
+                // S 계산: 몸무게 / 키
                 double s = weight / height;
                 String grade = calculateGrade(s);
 
@@ -82,7 +82,7 @@ public class ProfileActivity extends AppCompatActivity {
                 intent.putExtra("name", name);
                 intent.putExtra("height", heightStr);
                 intent.putExtra("weight", weightStr);
-                intent.putExtra("goal", goal);          // ✅ 운동목적 전달
+                intent.putExtra("goal", goal);
                 intent.putExtra("s_value", s);
                 intent.putExtra("s_grade", grade);
                 startActivity(intent);

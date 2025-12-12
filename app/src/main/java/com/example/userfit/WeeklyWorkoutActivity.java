@@ -52,7 +52,7 @@ public class WeeklyWorkoutActivity extends AppCompatActivity {
         if ("1RM_UPDATE".equals(mode)) {
             tvTitle.setText("1RM 갱신 (등급: " + (grade == null ? "-" : grade) + ")");
         } else {
-            tvTitle.setText("요일별 추천운동 (등급: " + (grade == null ? "-" : grade) + ")");
+            tvTitle.setText("요일별 추천운동");
         }
 
         // 공통 리스너

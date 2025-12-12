@@ -29,9 +29,10 @@ public class HomeActivity extends AppCompatActivity {
         layoutWeekly = findViewById(R.id.layout_weekly);
         layoutDiet = findViewById(R.id.layout_diet);
         layoutInfo = findViewById(R.id.layout_info);
-        layoutOnerm = findViewById(R.id.layout_onerm);   // ✅ 1RM 갱신 카드
+        layoutOnerm = findViewById(R.id.layout_onerm);
 
         name = getIntent().getStringExtra("name");
+
         sValue = getIntent().getDoubleExtra("s_value", 0.0);
         sGrade = getIntent().getStringExtra("s_grade");
         goal = getIntent().getStringExtra("goal");
@@ -62,29 +63,30 @@ public class HomeActivity extends AppCompatActivity {
                 Intent intent = new Intent(HomeActivity.this, MealPlanActivity.class);
                 intent.putExtra("s_value", sValue);
                 intent.putExtra("s_grade", sGrade);
+                intent.putExtra("goal", goal);
                 startActivity(intent);
             }
         });
 
-        // 운동 정보 (부위 선택 + 벤치프레스 표)
+        // 운동 정보
         layoutInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, ExerciseListActivity.class);
                 intent.putExtra("s_value", sValue);
                 intent.putExtra("s_grade", sGrade);
-                intent.putExtra("name", name); // ✅ ExerciseList에서 이름도 사용
+                intent.putExtra("name", name);
                 startActivity(intent);
             }
         });
 
-        // ✅ 1RM 갱신 카드
+        // 1RM 갱신
         layoutOnerm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, OneRmUpdateActivity.class);
-                intent.putExtra("name", name);     // "OOO님의 1RM"
-                startActivity(intent);             // 결과는 SharedPreferences로만 저장
+                intent.putExtra("name", name);
+                startActivity(intent);
             }
         });
     }
